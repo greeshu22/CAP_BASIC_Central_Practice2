@@ -1,0 +1,19 @@
+_schema-version: "2.1"
+ID: central_employeeMaster
+version: 0.0.1
+modules:
+- name: emp_master
+  type: hdb
+  path: db
+  requires:
+  - name: hdi_db_emp_master
+    properties:
+      TARGET_CONTAINER: ~{hdi-container-name}
+resources:
+- name: hdi_db_emp_master
+  type: com.sap.xs.hdi-container
+  parameters:
+    config:
+      schema: emp_master
+  properties:
+    hdi-container-name: ${service-name}

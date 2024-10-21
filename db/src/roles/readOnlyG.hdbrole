@@ -1,0 +1,17 @@
+{
+    "role": {
+        "name": "btp_db_ec::ReadOnly#",
+        "object_privileges": [
+            {
+                "name": "EMP_DBViews_V_V1.EMPLOYEES",
+                "type": "TABLE",
+                "privileges_with_grant_option": ["SELECT"]
+            },
+            {
+                "name": "EMP_DBVIEW_V_V1.DEPARTMENT",
+                "type": "TABLE",
+                "privileges_with_grant_option": ["SELECT"]
+            }
+        ]
+    }
+}

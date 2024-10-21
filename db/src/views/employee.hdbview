@@ -1,0 +1,12 @@
+view "EMP_DBViews_V_V1.EMPLOYEES" AS
+SELECT
+ID ,
+EMP_ID ,
+NAME ,
+EMAIL_ID ,
+DEPARTMENT_ID ,
+createdAt ,
+createdBy ,
+modifiedAt ,
+   modifiedBy 
+    from "EMP_DBTABLE.EMPLOYEES1";

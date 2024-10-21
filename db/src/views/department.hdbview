@@ -1,0 +1,9 @@
+view "EMP_DBVIEW_V_V1.DEPARTMENT" AS
+SELECT
+ID ,
+DEPART_NAME ,
+createdAt ,
+createdBy ,
+modifiedAt ,
+   modifiedBy 
+    from "EMP_DBTABLE.DEPARTMENT";
